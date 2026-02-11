@@ -135,28 +135,28 @@ export default function SkillsPage() {
           ))}
         </div>
 
-        {/* 4. BOTTOM EXPERIENCE STRIP */}
+      {/* 4. BOTTOM EXPERIENCE STRIP */}
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="mt-32 p-10 rounded-[40px] border border-slate-800 bg-slate-900/30 flex flex-col md:flex-row items-center justify-between gap-8"
+          className="mt-20 md:mt-32 p-6 md:p-10 rounded-[30px] md:rounded-[40px] border border-slate-800 bg-slate-900/30 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left"
         >
-          <div className="flex items-center gap-6">
-            <div className="p-4 bg-blue-500/20 rounded-full text-blue-400 animate-spin-slow">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+            <div className="p-4 bg-blue-500/20 rounded-full text-blue-400 animate-spin-slow shrink-0">
               <Cpu size={32} />
             </div>
             <div>
-              <h4 className="text-2xl font-bold">Always Learning, Always Improving</h4>
-              <p className="text-slate-500">I constantly explore new tools and technologies to deliver modern, future-ready solutions.</p>
+              <h4 className="text-xl md:text-2xl font-bold">Always Learning, Always Improving</h4>
+              <p className="text-slate-500 text-sm md:text-base">I constantly explore new tools and technologies to deliver modern, future-ready solutions.</p>
             </div>
           </div>
-         <a 
-  href="mailto:aribabasharat074@gmail.com" 
-  className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-2xl font-black hover:bg-blue-500 hover:text-white transition-all group"
->
-  START A PROJECT 
-  <MousePointer2 size={18} className="group-hover:translate-x-2 transition-transform" />
-</a>
+          <a 
+            href="mailto:aribabasharat074@gmail.com" 
+            className="flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-2xl font-black hover:bg-blue-500 hover:text-white transition-all group w-full md:w-auto"
+          >
+            START A PROJECT 
+            <MousePointer2 size={18} className="group-hover:translate-x-2 transition-transform" />
+          </a>
         </motion.div>
       </div>
     </div>

@@ -27,15 +27,15 @@ export default function WorkPage() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         
-        {/* TOP PRIVACY BANNER */}
+       {/* TOP PRIVACY BANNER */}
         <motion.div 
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="mb-12 flex items-center justify-center"
+          className="mb-8 md:mb-12 flex items-center justify-center px-2"
         >
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-amber-500/10 border border-amber-500/20 backdrop-blur-md">
-            <ShieldCheck className="text-amber-500" size={18} />
-            <p className="text-xs md:text-sm font-medium text-amber-200 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-3 px-4 md:px-6 py-3 rounded-2xl md:rounded-full bg-amber-500/10 border border-amber-500/20 backdrop-blur-md max-w-full">
+            <ShieldCheck className="text-amber-500 shrink-0" size={18} />
+            <p className="text-[10px] md:text-sm font-medium text-amber-200 uppercase tracking-wider leading-tight">
               Corporate Privacy: Some of my enterprise work is protected by company policies and non-disclosure agreements.
             </p>
           </div>

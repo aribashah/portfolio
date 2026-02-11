@@ -40,18 +40,19 @@ export default function Portfolio() {
 
       <main className="max-w-7xl mx-auto px-6 pt-28 pb-24 relative z-10">
         
-        {/* 2. PREMIUM HERO SECTION */}
-        <section className="min-h-[80vh] flex flex-col justify-center items-start mb-24">
+       {/* 2. PREMIUM HERO SECTION */}
+        <section className="min-h-[50vh] md:min-h-[80vh] flex flex-col justify-center items-start mb-12 md:mb-24 pt-4 md:pt-0">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="w-full"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-400 text-xs font-mono tracking-widest mb-10 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 text-blue-400 text-[10px] md:text-xs font-mono tracking-widest mb-6 md:mb-10 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
               <Sparkles size={14} className="animate-pulse" /> WEB DEVELOPER & DESIGNER
             </div>
 
-            <h1 className="text-7xl md:text-9xl font-black text-white mb-8 tracking-tighter leading-[0.8] italic">
+            <h1 className="text-5xl md:text-9xl font-black text-white mb-4 md:mb-8 tracking-tighter leading-[1.1] md:leading-[0.8] italic">
               Ariba <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400">
                 Basharat.
@@ -62,17 +63,17 @@ export default function Portfolio() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-slate-400 text-lg md:text-2xl max-w-3xl mb-12 leading-relaxed font-light"
+              className="text-slate-400 text-base md:text-2xl max-w-3xl mb-8 md:mb-12 leading-relaxed font-light"
             >
-             I design and build <span className="text-white">modern, high-performance websites</span> that are fast, visually engaging, and easy to use. Turning ideas into impactful digital experiences.
+             I design and build <span className="text-white">modern, high-performance websites</span> that are fast, visually engaging, and easy to use.
             </motion.p>
 
             <motion.div className="flex flex-wrap gap-6">
-              <Link href="/work" className="group relative">
+              <Link href="/work" className="group relative w-full sm:w-auto">
                 <motion.div 
                    whileHover={{ scale: 1.05, y: -5 }}
                    whileTap={{ scale: 0.95 }}
-                   className="relative z-10 flex items-center gap-3 bg-white text-[#020617] px-10 py-5 rounded-2xl font-black transition-all hover:bg-blue-400 hover:text-white shadow-xl"
+                   className="relative z-10 flex items-center justify-center gap-3 bg-white text-[#020617] px-8 md:px-10 py-4 md:py-5 rounded-2xl font-black transition-all hover:bg-blue-400 hover:text-white shadow-xl"
                 >
                   EXPLORE PROJECTS
                   <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
@@ -143,18 +144,22 @@ export default function Portfolio() {
           </motion.div>
         </motion.div>
 
-        {/* 4. FINAL CTA STRIP */}
+       {/* 4. FINAL CTA STRIP */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="mt-32 p-12 rounded-[50px] bg-gradient-to-r from-blue-600/10 to-transparent border border-blue-500/20 flex flex-col md:flex-row items-center justify-between gap-8"
+          className="mt-16 md:mt-32 p-6 md:p-12 rounded-[30px] md:rounded-[50px] bg-gradient-to-r from-blue-600/10 to-transparent border border-blue-500/20 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left"
         >
           <div>
-            <h2 className="text-4xl font-black text-white mb-2 italic">Ready to innovate?</h2>
-            <p className="text-slate-400">Let's build something extraordinary together.</p>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-2 italic leading-tight">Ready to innovate?</h2>
+            <p className="text-slate-400 text-sm md:text-base">Let's build something extraordinary together.</p>
           </div>
-          <a href="mailto:aribabasharat074@gmail.com" className="group flex items-center gap-3 bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold hover:bg-blue-500 transition-all shadow-xl shadow-blue-500/20">
-            START A CONVERSATION <MousePointer2 size={18} className="group-hover:rotate-12 transition-transform" />
+          <a 
+            href="mailto:aribabasharat074@gmail.com" 
+            className="group flex items-center justify-center gap-3 bg-blue-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold hover:bg-blue-500 transition-all shadow-xl shadow-blue-500/20 w-full md:w-auto"
+          >
+            START A CONVERSATION 
+            <MousePointer2 size={18} className="group-hover:rotate-12 transition-transform" />
           </a>
         </motion.div>
       </main>
